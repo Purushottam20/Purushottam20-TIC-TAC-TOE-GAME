@@ -58,7 +58,6 @@ const enableBoxes = () => {
 };
 let isGameOver = false;
 const showWinner = (winner) => {
-    isGameOver = true;
     msg.innerText = `Congratulation, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
     disableBoxes();
@@ -88,6 +87,7 @@ const checkDraw = () => {
             msg.innerText = `DRAW`;
             msgContainer.classList.remove("hide");
             disableBoxes();
+            isGameOver = false;
         }
     }
 };
