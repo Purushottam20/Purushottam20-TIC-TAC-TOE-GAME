@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: lightpink;
+    background-color: rgb(164, 84, 255);
     text-align: center;
 }
 
@@ -41,6 +41,13 @@ body {
     background-color: aqua;
     border-radius: 1rem;
     border: none;
+    box-shadow: 0 0 2rem rgba(0, 255, 255, 0.687);
+}
+
+#reset-btn:hover {
+    background-color: red;
+    box-shadow: 0 0 2rem rgba(255, 0, 0, 0.589);
+    transition: ease-in 0.5s 0.1s;
 }
 
 #new-btn {
@@ -49,6 +56,13 @@ body {
     background-color: aqua;
     border-radius: 1rem;
     border: none;
+    box-shadow: 0 0 2rem rgba(0, 221, 255, 0.621);
+}
+
+#new-btn:hover {
+    background-color: red;
+    box-shadow: 0 0 2rem rgba(255, 0, 0, 0.597);
+    transition: ease-in 0.5s 0.1s;
 }
 
 #msg {

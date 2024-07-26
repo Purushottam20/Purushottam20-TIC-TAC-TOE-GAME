@@ -27,12 +27,14 @@ boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if (turn0) {
             box.innerText = "O";
-            box.style.color = "red"
+            box.style.color = "blue"
+            box.style.backgroundColor = "black"
             turn0 = false;
         }
         else {
             box.innerText = "X";
-            box.style.color = "purple"
+            box.style.color = "red"
+            box.style.backgroundColor = "black"
             turn0 = true;
         }
         box.disabled = true;
@@ -51,6 +53,7 @@ const enableBoxes = () => {
     for (let box of boxes) {
         box.disabled = false;
         box.innerText = "";
+        box.style.backgroundColor = "white"
     }
 };
 let isGameOver = false;
@@ -87,7 +90,7 @@ const checkDraw = () => {
             disableBoxes();
         }
     }
-}
+};
 
 newGamebtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
