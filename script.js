@@ -18,6 +18,7 @@ const winPatterns = [
 ];
 
 const resetGame = () => {
+    isGameOver = false;
     turn0 = true;
     enableBoxes();
     msgContainer.classList.add("hide");
@@ -58,6 +59,7 @@ const enableBoxes = () => {
 };
 let isGameOver = false;
 const showWinner = (winner) => {
+    isGameOver = true;
     msg.innerText = `Congratulation, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
     disableBoxes();
